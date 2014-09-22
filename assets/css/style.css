@@ -12,8 +12,14 @@ a {
 }
 
 body {
+	color: #062033;
 	padding-top: 70px;
 	background-color: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+
+input,
+textarea {
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -55,11 +61,20 @@ header {
 
 .header-logo {
 	float: left;
+	width: 75px;
+	height: 45px;
+	margin-right: 20px;
+	margin-top: 12.5px;
 }
 
 .header-name {
 	float: left;
-	font-size: 24px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	padding-left: 20px;
+	margin-top: 25px;
+	border-left: 1px solid #fff;
 }
 
 .header-nav {
@@ -235,8 +250,34 @@ header {
 
 /*------------------ OUR DIFFERENTIAL ------------------*/
 
-#differential {
-	height: 770px;
+.people-list {
+	width: 600px;
+	margin: 100px auto 0;
+}
+
+.people {
+	width: 300px;
+	float: left;
+}
+
+.people-thumb {
+	width: 270px;
+	height: 300px;
+	margin: 0 auto;
+	background-color: #ccc;
+}
+
+.people-name {
+	font-size: 18px;
+	text-align: center;
+	font-weight: 600;
+	margin: 15px 0 5px;
+}
+
+.people-role {
+	font-size: 13px;
+	text-align: center;
+	opacity: 0.5;
 }
 
 /*------------------ PRODUCTS ------------------*/
@@ -294,10 +335,60 @@ header {
 
 /*------------------ CONTACT ------------------*/
 
-#contact {
-	height: 550px;
+.contact-aside {
+	width: 25%;
+	float: left;
+	margin-top: 70px;
 }
 
+.contact-aside h3 {
+	color: #062033;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 26px;
+	margin-bottom: 30px;
+}
+
+.contact-aside p {
+	color: #6a737b;
+	font-size: 13px;
+	line-height: 22px;
+}
+
+.contact-form {
+	width: 73%;
+	float: right;
+	margin-top: 70px;
+}
+
+.contact-input {
+	width: 45%;
+	float: left;
+	height: 40px;
+	padding-bottom: 10px;
+	margin-right: 5%;
+	border: none;
+	outline: none;
+	margin-bottom: 30px;
+	box-shadow: none;
+	border-bottom: 1px solid #ccc;
+}
+
+.contact-input.full {
+	width: 95%;
+	margin-right: 5%;
+}
+
+.contact-submit {
+	border: none;
+	float: right;
+	height: 38px;
+	margin-right: 5%;
+	color: #fff;
+	cursor: pointer;
+	padding: 0 15px;
+	background-color: #cf2648;
+}
 
 /*---------------------------------------*\
                   FOOTER
@@ -308,4 +399,48 @@ footer {
 	height: 70px;
 	background-color: #cf2648;
 	border-top: 5px solid #d6d8da;
+}
+
+.footer-logo {
+	width: 55px;
+	height: 30px;
+	float: left;
+	margin-top: 17.5px;
+	background-position: -103px 1px;
+}
+
+.footer-copy {
+	float: right;
+	display: block;
+	color: #fff;
+	font-size: 13px;
+	line-height: 65px;
+	margin-right: 10px;
+}
+
+.footer-social {
+	float: right;
+	width: 108px;
+	height: 26px;
+	margin-top: 19.5px;
+}
+
+.footer-social-link {
+	width: 26px;
+	height: 26px;
+	float: left;
+	display: block;
+	margin-left: 10px;
+}
+
+.footer-social-link.facebook {
+	background-position: 0 -90px;
+}
+
+.footer-social-link.twitter {
+	background-position: -47px -90px;
+}
+
+.footer-social-link.gplus {
+	background-position: -85px -89px;
 }
