@@ -6,7 +6,8 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "ejs": "*",
     "express": "3.4.7",
-    "ejs": "*"
+    "serve-favicon": "^2.1.4"
   }
 }
