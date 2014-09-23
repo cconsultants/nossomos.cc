@@ -251,20 +251,23 @@ header {
 /*------------------ OUR DIFFERENTIAL ------------------*/
 
 .people-list {
-	width: 600px;
+	width: 700px;
 	margin: 100px auto 0;
 }
 
 .people {
-	width: 300px;
+	width: 340px;
 	float: left;
 }
 
 .people-thumb {
-	width: 270px;
-	height: 300px;
+	width: 320px;
 	margin: 0 auto;
-	background-color: #ccc;
+}
+
+.people-thumb img {
+	width: 100%;
+	height: 100%;
 }
 
 .people-name {
