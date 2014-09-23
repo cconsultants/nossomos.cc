@@ -121,6 +121,7 @@ header {
 	text-align: center;
 }
 
+.rock-item-text a,
 .section-description a {
 	color: #e5274a;
 }
