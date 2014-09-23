@@ -35,7 +35,7 @@ section {
 
 .icons {
 	background-repeat: no-repeat;
-	background-image: url(../img/icons.png);
+	background-image: url(/images/icons.png);
 }
 
 .clearfix {
@@ -128,7 +128,7 @@ header {
 	background-color: #e5274a;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-image: url(../img/bg-home.png);
+	background-image: url(/images/bg-home.png);
 }
 
 #home h1 {
@@ -288,7 +288,7 @@ header {
 
 #products {
 	background-color: #0b2235;
-	background-image: url(../img/bg-products.jpg);
+	background-image: url(/images/bg-products.jpg);
 }
 
 .product-list {
@@ -308,7 +308,7 @@ header {
 	width: 130px;
 	height: 131px;
 	margin: 0 auto 20px;
-	background-image: url(../img/icons-product.png);
+	background-image: url(/images/icons-product.png);
 }
 
 .product-thumb.cowdown {
