@@ -85,6 +85,7 @@ header {
 .header-nav-link {
 	float: left;
 	height: 70px;
+	cursor: pointer;
 	padding: 0 10px;
 	transition: all 0.25s linear;
 	-webkit-transition: all 0.25s linear;
@@ -364,22 +365,29 @@ header {
 	margin-top: 70px;
 }
 
-.contact-input {
+.contact-input,
+.contact-textarea {
 	width: 45%;
 	float: left;
-	height: 40px;
-	padding-bottom: 10px;
+	height: 50px;
 	margin-right: 5%;
 	border: none;
+	padding-left: 10px;
 	outline: none;
+	font-size: 12px;
+	color: #cf2648;
 	margin-bottom: 30px;
 	box-shadow: none;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #e6e6e7;
+	background-color: #f7f7f8;
 }
 
-.contact-input.full {
+.contact-textarea {
 	width: 95%;
+	height: 135px;
+	resize: none;
 	margin-right: 5%;
+	padding-top: 10px;
 }
 
 .contact-submit {
@@ -400,6 +408,8 @@ header {
 footer {
 	width: 100%;
 	height: 70px;
+	color: #fff;
+	line-height: 65px;
 	background-color: #cf2648;
 	border-top: 5px solid #d6d8da;
 }
@@ -412,12 +422,20 @@ footer {
 	background-position: -103px 1px;
 }
 
+.footer-name {
+	float: left;
+	line-height: 18px;
+	font-size: 16px;
+	margin-left: 10px;
+	padding-left: 10px;
+	margin-top: 24px;
+	border-left: 1px solid #fff;
+}
+
 .footer-copy {
 	float: right;
 	display: block;
-	color: #fff;
 	font-size: 13px;
-	line-height: 65px;
 	margin-right: 10px;
 }
 
