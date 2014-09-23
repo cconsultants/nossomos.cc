@@ -4,15 +4,15 @@
  */
 
 var express = require('express');
-var routes = require('./routes');
-var http = require('http');
-var path = require('path');
+var routes  = require('./routes');
+var http    = require('http');
+var path    = require('path');
 var favicon = require('serve-favicon');
 
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 5555);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.logger('dev'));
@@ -21,7 +21,7 @@ app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public','images', 'favicon.ico')));
 
 // development only
 if ('development' == app.get('env')) {
@@ -29,6 +29,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.post('/contact', routes.postContact);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

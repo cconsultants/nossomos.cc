@@ -8,6 +8,7 @@
   "dependencies": {
     "ejs": "*",
     "express": "3.4.7",
+    "sendgrid": "^1.2.0",
     "serve-favicon": "^2.1.4"
   }
 }

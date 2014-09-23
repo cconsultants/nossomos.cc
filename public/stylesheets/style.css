@@ -121,6 +121,10 @@ header {
 	text-align: center;
 }
 
+.section-description a {
+	color: #e5274a;
+}
+
 /*------------------ HOME ------------------*/
 
 #home {
@@ -365,6 +369,11 @@ header {
 	margin-top: 70px;
 }
 
+.loading {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
 .contact-input,
 .contact-textarea {
 	width: 45%;
@@ -464,4 +473,42 @@ footer {
 
 .footer-social-link.gplus {
 	background-position: -85px -89px;
+}
+
+.checkmark {
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin: 30px auto;
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+}
+
+.checkmark-circle {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 60px solid #cf2648;
+	border-radius: 60px;
+	left: 0;
+	top: 0;
+}
+
+.checkmark-stem {
+	position: absolute;
+	width: 25px;
+	height: 79px;
+	background-color: #fff;
+	left: 57px;
+	top: 17px;
+}
+
+.checkmark-kick {
+	position: absolute;
+	width: 30px;
+	height: 25px;
+	background-color: #fff;
+	left: 37px;
+	top: 71px;
 }

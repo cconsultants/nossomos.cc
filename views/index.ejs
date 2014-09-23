@@ -108,15 +108,31 @@
     <div class="clearfix"></div>
   </section>
 
+  <section id="contact-success" style="display: none">
+    <h2 class="section-title">A-w-e-s-o-m-e!</h2>
+    <div class="checkmark">
+      <div class="checkmark-circle"></div>
+      <div class="checkmark-stem"></div>
+      <div class="checkmark-kick"></div>
+    </div>
+    <p class="section-description">
+      We promise this won't take forever, we'll get back to you very soon.
+      <br />
+      If you need to talk right now, give us a call: <a href="tel://+558189800660"><strong>(+55) 81 8980 0660</strong></a>
+
+      </p>
+    <div class="clearfix"></div>
+  </section>
+
   <section id="contact">
     <h2 class="section-title">Let's Talk</h2>
     <p class="section-description">We’d love to hear from you! Send us a message using the form below</p>
 
     <div class="inner">
-      <form class="contact-form">
-        <input class="contact-input" name="name" type="text" placeholder="Name" required="required"/>
-        <input class="contact-input" name="email" type="email" placeholder="Email" required="required"/>
-        <textarea class="contact-textarea" name="message" placeholder="Message" required="required"></textarea>
+      <form class="contact-form" method="post" action="/contact">
+        <input class="contact-input contact-form-name" name="name" type="text" placeholder="Name" required="required"/>
+        <input class="contact-input contact-form-email" name="email" type="email" placeholder="Email" required="required"/>
+        <textarea class="contact-textarea contact-form-message" name="message" placeholder="Message" required="required"></textarea>
         <input class="contact-submit" type="submit" value="Send Message" />
       </form>
 

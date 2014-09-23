@@ -12,3 +12,25 @@ jQuery('header').on('click', '.header-nav-link, .header-logo, .header-name', fun
 		scrollTop: topDistance
 	}, 1000);
 });
+
+jQuery('.contact-form').on('submit', function (e) {
+  e.preventDefault();
+
+  var name    = $('.contact-form-name').val();
+  var email   = $('.contact-form-email').val();
+  var message = $('.contact-form-message').val();
+
+  $('#contact form').addClass('loading');
+  $('#contact .contact-submit').attr('value', 'Sending message...');
+
+  $.post('/contact', {
+    name: name,
+    email: email,
+    message: message,
+  }, function (data) {
+    if (data.success) {
+      $("#contact-success").show();
+      $("#contact").hide();
+    }
+  });
+});
