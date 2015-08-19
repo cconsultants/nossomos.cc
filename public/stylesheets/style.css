@@ -141,7 +141,7 @@ header {
 	font-size: 100px;
 	font-weight: 100;
 	text-align: center;
-	margin-top: 80px;
+	margin-top: 150px;
 }
 
 #home h1 strong {
@@ -169,7 +169,7 @@ header {
 .home-social {
 	height: 24px;
 	width: 136px;
-	margin: 170px auto -40px;
+	margin: 100px auto -40px;
 }
 
 .home-social-link {
