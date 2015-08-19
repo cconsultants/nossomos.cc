@@ -24,6 +24,7 @@ exports.postContact = function(req, res){
   }
 
   sendgrid.send(payload, function(err, json) {
+    console.log(err, json);
     res.json({ success: (err) ? false : true });
   });
 };
