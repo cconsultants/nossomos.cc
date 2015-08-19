@@ -417,63 +417,26 @@ header {
 
 footer {
 	width: 100%;
-	height: 70px;
 	color: #fff;
-	line-height: 65px;
 	background-color: #cf2648;
-	border-top: 5px solid #d6d8da;
+	border-top: 1px solid #d6d8da;
+	clear: both;
+	padding: 20px 0;
 }
 
-.footer-logo {
-	width: 55px;
-	height: 30px;
-	float: left;
-	margin-top: 17.5px;
-	background-position: -103px 1px;
+footer h2 {
+	font-size: 18px;
+	margin-bottom: 20px;
 }
 
-.footer-name {
-	float: left;
+.footer-description {
 	line-height: 18px;
 	font-size: 16px;
-	margin-left: 10px;
-	padding-left: 10px;
-	margin-top: 24px;
-	border-left: 1px solid #fff;
+	text-align: center;
 }
 
-.footer-copy {
-	float: right;
-	display: block;
-	font-size: 13px;
-	margin-right: 10px;
-}
-
-.footer-social {
-	float: right;
-	width: 108px;
-	height: 26px;
-	margin-top: 19.5px;
-}
-
-.footer-social-link {
-	width: 26px;
-	height: 26px;
-	float: left;
-	display: block;
-	margin-left: 10px;
-}
-
-.footer-social-link.facebook {
-	background-position: 0 -90px;
-}
-
-.footer-social-link.twitter {
-	background-position: -47px -90px;
-}
-
-.footer-social-link.gplus {
-	background-position: -85px -89px;
+.footer-description p {
+	font-size: 12px;
 }
 
 .checkmark {

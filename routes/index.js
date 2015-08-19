@@ -17,7 +17,7 @@ exports.postContact = function(req, res){
   body += "<br /><br />";
 
   var payload   = {
-    to      : 'hello@nossomos.cc',
+    to      : 'djalma@nossomos.cc',
     from    : req.body.email,
     subject : '[CC Website] Contact Form - ' + req.body.name,
     html    : body
