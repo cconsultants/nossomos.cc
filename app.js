@@ -12,7 +12,7 @@ var favicon = require('serve-favicon');
 var app = express();
 
 // all environments
-app.set('port', 5555);
+app.set('port', process.env.PORT || 5555);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.logger('dev'));
