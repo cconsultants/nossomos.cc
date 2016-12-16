@@ -15,16 +15,17 @@ body {
 	color: #062033;
 	padding-top: 70px;
 	background-color: #fff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 input,
 textarea {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 section {
 	width: 100%;
+	height: 100vh;
 	padding: 90px 0;
 }
 
@@ -103,16 +104,14 @@ header {
 
 
 .section-title {
-	width: 270px;
 	color: #e5274a;
 	font-size: 28px;
 	font-weight: 800;
 	text-align: center;
-	margin: 0 auto 40px;
+	margin: 0 0 40px;
 	padding-bottom: 10px;
 	white-space: nowrap;
 	text-transform: uppercase;
-	border-bottom: 1px solid #dce1e5;
 }
 
 .section-description {
@@ -131,9 +130,23 @@ header {
 #home {
 	text-align: center;
 	background-color: #e5274a;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url(/images/bg-home.png);
+	position: relative;
+	overflow: hidden;
+}
+
+#home:before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 100vh;
+	width: 100%;
+	content: 'C.C';
+	font-family: 'Roboto', sans-serif;
+	font-size: 48em;
+	font-weight: 300;
+	color: rgba(0,0,0,0.1);
+	overflow: hidden;
+	z-index: 0;
 }
 
 #home h1 {
@@ -142,10 +155,11 @@ header {
 	font-weight: 100;
 	text-align: center;
 	margin-top: 150px;
+	z-index: 1;
 }
 
 #home h1 strong {
-	font-weight: 700;
+	font-weight: 900;
 }
 
 #home h2 {
@@ -164,182 +178,6 @@ header {
 	font-size: 18px;
 	font-weight: 100;
 	margin-top: 50px;
-}
-
-.home-social {
-	height: 24px;
-	width: 136px;
-	margin: 100px auto -40px;
-}
-
-.home-social-link {
-	width: 24px;
-	height: 24px;
-	float: left;
-	margin: 0 5px;
-	display: block;
-	opacity: 0.3;
-	cursor: pointer;
-	transition: opacity 0.25s linear;
-	-webkit-transition: opacity 0.25s linear;
-}
-
-.home-social-link:hover {
-	opacity: 1;
-}
-
-.home-social-link.twitter {
-	background-position: 3px -52px;
-}
-
-.home-social-link.facebook {
-	background-position: -29px -51px;
-}
-
-.home-social-link.gplus {
-	background-position: -60px -52px;
-}
-
-.home-social-link.dribble {
-	background-position: -91px -52px;
-}
-
-/*------------------ ROCK ------------------*/
-
-#rock {
-	background-color: #f4f7f9;
-}
-
-.rock-list {
-	margin-top: 80px;
-	padding-left: 30px;
-}
-
-.rock-item {
-	float: left;
-	color: #062033;
-	width: 33.333%;
-	padding: 0 55px;
-}
-
-.rock-item-icon {
-	width: 40px;
-	height: 40px;
-	float: left;
-	margin-left: -55px;
-}
-
-.rock-item-icon.training {
-	background-position: -190px -60px;
-}
-
-.rock-item-icon.open {
-	background-position: -255px 0;
-}
-
-.rock-item-icon.consulting {
-	background-position: -190px 0;
-}
-
-.rock-item-name {
-	color: #062033;
-	font-size: 20px;
-	font-weight: 600;
-}
-
-.rock-item-text {
-	font-size: 13px;
-	line-height: 20px;
-	margin-top: 10px;
-}
-
-
-/*------------------ OUR DIFFERENTIAL ------------------*/
-
-.people-list {
-	width: 700px;
-	margin: 100px auto 0;
-}
-
-.people {
-	width: 340px;
-	float: left;
-}
-
-.people-thumb {
-	width: 320px;
-	margin: 0 auto;
-}
-
-.people-thumb img {
-	width: 100%;
-	height: 100%;
-}
-
-.people-name {
-	font-size: 18px;
-	text-align: center;
-	font-weight: 600;
-	margin: 15px 0 5px;
-}
-
-.people-role {
-	font-size: 13px;
-	text-align: center;
-	opacity: 0.5;
-}
-
-/*------------------ PRODUCTS ------------------*/
-
-#products {
-	background-color: #0b2235;
-	background-image: url(/images/bg-products.jpg);
-}
-
-.product-list {
-	width: 1050px;
-	margin: 0 auto;
-}
-
-.product {
-	float: left;
-	color: #fff;
-	width: 350px;
-	margin-top: 60px;
-	text-align: center;
-}
-
-.product-thumb {
-	width: 130px;
-	height: 131px;
-	margin: 0 auto 20px;
-	background-image: url(/images/icons-product.png);
-}
-
-.product-thumb.cowdown {
-	background-position: 0 0;
-}
-
-.product-thumb.meusgastos {
-	background-position: -130px 0;
-}
-
-.product-thumb.eventon {
-	background-position: -260px 0;
-}
-
-.product-thumb.youridea {
-	background-position: -390px 0;
-}
-
-.product-name {
-	font-size: 54px;
-	font-weight: 600;
-}
-
-.product-description {
-	font-size: 18px;
-	text-transform: uppercase;
 }
 
 /*------------------ CONTACT ------------------*/
