@@ -1,9 +1,5 @@
 # Code Consultants Website
 [http://nossomos.cc](http://nossomos.cc)
 
-# Instructions
-```bash
-git clone ... cc
-npm install
-forever start ~/apps/cc/app.js
-```
+# Host
+We use wedeploy.com. [Give them a try](https://wedeploy.com)
