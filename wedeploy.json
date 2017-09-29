@@ -1,5 +1,0 @@
-{
-    "id": "nossomosdotcc",
-    "image": "wedeploy/hosting:0.0.1",
-    "customDomains": ["nossomos.cc", "www.nossomos.cc"]
-}
